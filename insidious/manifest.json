@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Insidious",
+    "description": "Modify distracting websites to be less enticing", 
+    "icons": {
+        "32": "images/poisongrey-32.png",
+        "128": "images/poison-128.png"
+    },
+    "version": "1.0.0",
+    "permissions": [
+        "storage", 
+        "tabs",
+        "scripting",
+        "activeTab",
+        "webNavigation"
+    ],
+
+    "optional_host_permissions": ["*://*/*"
+    ],
+
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "images/poisongrey-32.png",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}   

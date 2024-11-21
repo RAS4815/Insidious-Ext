@@ -1,0 +1,29 @@
+<!--users input list of sites to block-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="blacklist">
+        <h2>Blacklist</h2>
+        <h3>Add Websites:</h3>
+        <input type="url" id="websiteInput" placeholder="Enter website">
+        <button id="addWebsiteButton">Add</button>
+        <h3>Websites blacklisted</h3>
+        <ul id="websiteList"></ul>
+    </div>
+    <div id="blacklist">
+        <h3>Remove Websites:</h3>
+        <input type="url" id="websiteOutput" placeholder="Enter website">
+        <button id="removeButton">Remove</button>
+    </div>
+    <!--Keep script at bottom of body-->
+    <script src="app.js"></script>
+</body>
+</html>
+
